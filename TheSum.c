@@ -14,11 +14,12 @@ if (!f){
 	fprintf(f, "%d\n", somma);
 	printf("Creazione file...\n");
 }
+else{
 printf("Lettura dal file sum.dat in corso ...\n");
 fscanf(f, "%d", &somma);
 printf("Valore corrente: %d\n", somma);
 fclose(f);
-
+}
 printf("Inserisci il valore da sommare:");
 scanf("%d", &num);
 
